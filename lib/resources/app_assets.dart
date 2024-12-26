@@ -1,7 +1,7 @@
 class AppAssets {
-  static const kProfilePic = 'assets/images/profile.jpeg';
-  static const kCookie1 = 'assets/images/cookie1.png';
-  static const kCookie2 = 'assets/images/cookie2.png';
-  static const kCookie3 = 'assets/images/cookie3.png';
-  static const kOnboarding = 'assets/images/onboarding.png';
+  static const kProfilePic = 'assets/profile.jpeg';
+  static const kCookie1 = 'assets/cookie1.png';
+  static const kCookie2 = 'assets/cookie2.png';
+  static const kLogo = 'assets/logo.png';
+  static const kOnboarding = 'assets/onboarding.png';
 }
