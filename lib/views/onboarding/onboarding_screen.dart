@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:luxury_timepieces/resources/app_assets.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
+import 'package:luxury_timepieces/routes/app_routes.dart';
+import 'package:luxury_timepieces/views/onboarding/widgets/primary_button.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -24,8 +26,13 @@ class OnboardingScreen extends StatelessWidget {
             AppAssets.kLogo,
             width: Get.width * 0.55,
             height: Get.width * 0.55,
-          )
+          ),
         ],
+      ),
+      bottomSheet: PrimaryButton(
+        onTap: () => Get.toNamed(AppRoutes.homescreen),
+        title: "Browse Collection",
+        borderRadius: 40,
       ),
     );
   }

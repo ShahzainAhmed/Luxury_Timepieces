@@ -10,10 +10,10 @@ class AppPages {
       name: AppRoutes.homescreen,
       page: () => const HomeScreen(),
     ),
-    // GetPage(
-    //   name: AppRoutes.onboarding,
-    //   page: () => const OnboardingScreen(),
-    // ),
+    GetPage(
+      name: AppRoutes.onboarding,
+      page: () => const OnboardingScreen(),
+    ),
     // GetPage(
     //   name: AppRoutes.detailScreen,
     //   page: () => const DetailScreen(),
