@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                 GridView.builder(
                   physics: const ClampingScrollPhysics(),
                   shrinkWrap: true,
-                  itemCount: tileModelList.length,
+                  itemCount: productTileList.length,
                   scrollDirection: Axis.vertical,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
@@ -54,7 +54,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   itemBuilder: (context, index) {
                     return ProductTile(
-                      tileModel: tileModelList[index],
+                      tileModel: productTileList[index],
                       onTap: () {},
                     );
                   },

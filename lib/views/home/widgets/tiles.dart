@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:luxury_timepieces/models/tile_model.dart';
-import 'package:luxury_timepieces/resources/app_assets.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
 import 'package:luxury_timepieces/resources/app_typography.dart';
 
 class ProductTile extends StatelessWidget {
   final VoidCallback onTap;
-  final TileModel tileModel;
+  final ProductTileModel tileModel;
   const ProductTile({
     super.key,
     required this.tileModel,
