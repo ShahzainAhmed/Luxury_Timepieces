@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
@@ -24,6 +23,7 @@ class MyApp extends StatelessWidget {
         initialRoute: AppRoutes.onboarding,
         getPages: AppPages.allPages,
         theme: ThemeData(
+          scaffoldBackgroundColor: AppColors.kBackgroundColor,
           appBarTheme:
               const AppBarTheme(backgroundColor: AppColors.kBackgroundColor),
         ),
