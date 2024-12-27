@@ -5,10 +5,10 @@ import 'package:luxury_timepieces/resources/app_assets.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
 import 'package:luxury_timepieces/resources/app_typography.dart';
 
-class Tile extends StatelessWidget {
+class ProductTile extends StatelessWidget {
   final VoidCallback onTap;
   final TileModel tileModel;
-  const Tile({
+  const ProductTile({
     super.key,
     required this.tileModel,
     required this.onTap,

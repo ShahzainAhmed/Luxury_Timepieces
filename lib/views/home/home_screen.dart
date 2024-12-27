@@ -53,7 +53,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisSpacing: 120.h,
                   ),
                   itemBuilder: (context, index) {
-                    return Tile(
+                    return ProductTile(
                       tileModel: tileModelList[index],
                       onTap: () {},
                     );
