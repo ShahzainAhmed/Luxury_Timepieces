@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:luxury_timepieces/models/tile_model.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
 import 'package:luxury_timepieces/resources/app_typography.dart';
+import 'package:luxury_timepieces/routes/app_routes.dart';
 import 'package:luxury_timepieces/views/home/widgets/tiles.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -54,8 +56,13 @@ class HomeScreen extends StatelessWidget {
                   ),
                   itemBuilder: (context, index) {
                     return ProductTile(
-                      tileModel: productTileList[index],
-                      onTap: () {},
+                      productTileModel: productTileList[index],
+                      onTap: () {
+                        Get.toNamed(
+                          AppRoutes.detailScreen,
+                          arguments: productTileList[index],
+                        );
+                      },
                     );
                   },
                 )

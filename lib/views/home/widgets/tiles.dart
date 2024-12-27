@@ -6,10 +6,10 @@ import 'package:luxury_timepieces/resources/app_typography.dart';
 
 class ProductTile extends StatelessWidget {
   final VoidCallback onTap;
-  final ProductTileModel tileModel;
+  final ProductTileModel productTileModel;
   const ProductTile({
     super.key,
-    required this.tileModel,
+    required this.productTileModel,
     required this.onTap,
   });
   @override
@@ -48,7 +48,7 @@ class ProductTile extends StatelessWidget {
                               .copyWith(color: AppColors.kGreyColor),
                         ),
                         TextSpan(
-                          text: tileModel.price,
+                          text: productTileModel.price,
                           style: AppTypography.kBold20
                               .copyWith(color: AppColors.kGreyColor),
                         ),
@@ -57,7 +57,8 @@ class ProductTile extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child: Text(tileModel.name, style: AppTypography.kLight12),
+                  child: Text(productTileModel.name,
+                      style: AppTypography.kLight12),
                 ),
                 SizedBox(height: 10.h)
               ],
@@ -67,7 +68,7 @@ class ProductTile extends StatelessWidget {
               right: 0,
               bottom: 80,
               child: Image.asset(
-                tileModel.image,
+                productTileModel.image,
                 height: 160.h,
               ),
             ),

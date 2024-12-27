@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:luxury_timepieces/routes/app_routes.dart';
+import 'package:luxury_timepieces/views/detail_screen/detail_screen.dart';
 import 'package:luxury_timepieces/views/home/home_screen.dart';
 import 'package:luxury_timepieces/views/onboarding/onboarding_screen.dart';
 
@@ -14,9 +15,9 @@ class AppPages {
       name: AppRoutes.onboarding,
       page: () => const OnboardingScreen(),
     ),
-    // GetPage(
-    //   name: AppRoutes.detailScreen,
-    //   page: () => const DetailScreen(),
-    // )
+    GetPage(
+      name: AppRoutes.detailScreen,
+      page: () => const DetailScreen(),
+    )
   ];
 }

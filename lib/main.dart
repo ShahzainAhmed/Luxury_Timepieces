@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        initialRoute: AppRoutes.homescreen,
+        initialRoute: AppRoutes.onboarding,
         getPages: AppPages.allPages,
         theme: ThemeData(
           scaffoldBackgroundColor: AppColors.kBackgroundColor,
