@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:luxury_timepieces/models/tile_model.dart';
 import 'package:luxury_timepieces/resources/app_assets.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
 import 'package:luxury_timepieces/resources/app_typography.dart';
 
 class Tile extends StatelessWidget {
   final VoidCallback onTap;
-  // final TileModel smallTileModel;
+  final TileModel tileModel;
   const Tile({
     super.key,
-    // required this.smallTileModel,
+    required this.tileModel,
     required this.onTap,
   });
   @override
@@ -48,7 +49,7 @@ class Tile extends StatelessWidget {
                               .copyWith(color: AppColors.kGreyColor),
                         ),
                         TextSpan(
-                          text: "450",
+                          text: tileModel.price,
                           style: AppTypography.kBold20
                               .copyWith(color: AppColors.kGreyColor),
                         ),
@@ -57,7 +58,7 @@ class Tile extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child: Text("Chronograph", style: AppTypography.kLight12),
+                  child: Text(tileModel.name, style: AppTypography.kLight12),
                 ),
                 SizedBox(height: 10.h)
               ],
@@ -66,7 +67,10 @@ class Tile extends StatelessWidget {
               left: 0,
               right: 0,
               bottom: 80,
-              child: Image.asset(AppAssets.kWatch1, height: 180.h),
+              child: Image.asset(
+                tileModel.image,
+                height: 160.h,
+              ),
             ),
           ],
         ),

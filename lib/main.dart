@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
 import 'package:luxury_timepieces/routes/app_pages.dart';
 import 'package:luxury_timepieces/routes/app_routes.dart';
+import 'package:luxury_timepieces/views/home/home_screen.dart';
 import 'package:luxury_timepieces/views/onboarding/onboarding_screen.dart';
 
 void main() {
@@ -15,19 +16,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return ScreenUtilInit(
       builder: (context, child) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        initialRoute: AppRoutes.onboarding,
+        initialRoute: AppRoutes.homescreen,
         getPages: AppPages.allPages,
         theme: ThemeData(
           scaffoldBackgroundColor: AppColors.kBackgroundColor,
           appBarTheme:
               const AppBarTheme(backgroundColor: AppColors.kBackgroundColor),
         ),
-        home: const OnboardingScreen(),
       ),
     );
   }
