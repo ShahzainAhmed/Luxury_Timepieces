@@ -18,23 +18,44 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Bounce(
+    return ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          fixedSize: Size(Get.width, 90.h),
+          backgroundColor: AppColors.kBlackColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius.r),
+          ),
+        ),
+        onPressed: onTap,
+        child: Text(
+          title,
+          style: AppTypography.kBold16.copyWith(color: AppColors.kWhiteColor),
+        ));
+  }
+}
+
+
+
+/* 
+Bounce(
       onTap: onTap,
       duration: const Duration(milliseconds: 100),
-      child: Container(
-        width: Get.width,
-        height: 90.h,
-        decoration: BoxDecoration(
-          color: AppColors.kBlackColor,
-          borderRadius: BorderRadius.circular(borderRadius.r),
-        ),
-        child: Center(
-          child: Text(
-            title,
-            style: AppTypography.kBold16.copyWith(color: AppColors.kWhiteColor),
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          width: Get.width,
+          height: 90.h,
+          decoration: BoxDecoration(
+            color: AppColors.kBlackColor,
+            borderRadius: BorderRadius.circular(borderRadius.r),
+          ),
+          child: Center(
+            child: Text(
+              title,
+              style: AppTypography.kBold16.copyWith(color: AppColors.kWhiteColor),
+            ),
           ),
         ),
       ),
-    );
-  }
-}
+    )
+ */

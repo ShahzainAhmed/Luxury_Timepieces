@@ -4,8 +4,6 @@ import 'package:get/get.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
 import 'package:luxury_timepieces/routes/app_pages.dart';
 import 'package:luxury_timepieces/routes/app_routes.dart';
-import 'package:luxury_timepieces/views/home/home_screen.dart';
-import 'package:luxury_timepieces/views/onboarding/onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,9 +21,13 @@ class MyApp extends StatelessWidget {
         initialRoute: AppRoutes.onboarding,
         getPages: AppPages.allPages,
         theme: ThemeData(
+          bottomSheetTheme: const BottomSheetThemeData(
+            backgroundColor: Colors.transparent,
+          ),
           scaffoldBackgroundColor: AppColors.kBackgroundColor,
-          appBarTheme:
-              const AppBarTheme(backgroundColor: AppColors.kBackgroundColor),
+          appBarTheme: const AppBarTheme(
+            backgroundColor: AppColors.kBackgroundColor,
+          ),
         ),
       ),
     );

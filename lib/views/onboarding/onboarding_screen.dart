@@ -11,8 +11,6 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-
     return Scaffold(
       backgroundColor: AppColors.kWhiteColor,
       body: Column(
@@ -32,7 +30,7 @@ class OnboardingScreen extends StatelessWidget {
       bottomSheet: PrimaryButton(
         onTap: () => Get.toNamed(AppRoutes.homescreen),
         title: "Browse Collection",
-        borderRadius: 40,
+        borderRadius: 100,
       ),
     );
   }
