@@ -7,7 +7,6 @@ import 'package:luxury_timepieces/models/tile_model.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
 import 'package:luxury_timepieces/resources/app_typography.dart';
 import 'package:luxury_timepieces/views/detail_screen/widget/bottom_sheet_widget.dart';
-import 'package:luxury_timepieces/views/onboarding/widgets/primary_button.dart';
 
 class DetailScreen extends StatefulWidget {
   const DetailScreen({super.key});
