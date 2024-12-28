@@ -57,8 +57,10 @@ class ProductTile extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child: Text(productTileModel.name,
-                      style: AppTypography.kLight12),
+                  child: Text(
+                    productTileModel.name,
+                    style: AppTypography.kLight12,
+                  ),
                 ),
                 SizedBox(height: 10.h)
               ],
@@ -67,9 +69,12 @@ class ProductTile extends StatelessWidget {
               left: 0,
               right: 0,
               bottom: 80,
-              child: Image.asset(
-                productTileModel.image,
-                height: 160.h,
+              child: Hero(
+                tag: productTileModel.image,
+                child: Image.asset(
+                  productTileModel.image,
+                  height: 160.h,
+                ),
               ),
             ),
           ],

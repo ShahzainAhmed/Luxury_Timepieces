@@ -34,8 +34,17 @@ class AppTypography {
   static TextStyle kExtraLight14 =
       GoogleFonts.outfit(fontSize: 14.sp, fontWeight: FontWeight.w300);
 
- static TextStyle kExtraLight20 =
+  static TextStyle kExtraLight20 =
       GoogleFonts.outfit(fontSize: 20.sp, fontWeight: FontWeight.w300);
+
+  static TextStyle kExtraLight22 =
+      GoogleFonts.outfit(fontSize: 22.sp, fontWeight: FontWeight.w300);
+
+  static TextStyle kExtraLight24 =
+      GoogleFonts.outfit(fontSize: 24.sp, fontWeight: FontWeight.w300);
+
+  static TextStyle kExtraLight26 =
+      GoogleFonts.outfit(fontSize: 26.sp, fontWeight: FontWeight.w300);
 
   static TextStyle kExtraLight28 =
       GoogleFonts.outfit(fontSize: 28.sp, fontWeight: FontWeight.w300);
@@ -158,7 +167,6 @@ class AppTypography {
 
   static TextStyle kExtraBold24 =
       GoogleFonts.outfit(fontSize: 24.sp, fontWeight: FontWeight.w700);
-
 
   static TextStyle kExtraBold26 =
       GoogleFonts.outfit(fontSize: 26.sp, fontWeight: FontWeight.w700);

@@ -27,7 +27,7 @@ class OnboardingScreen extends StatelessWidget {
         ],
       ),
       bottomSheet: PrimaryButton(
-        onTap: () => Get.toNamed(AppRoutes.homescreen),
+        onTap: () => Get.offAllNamed(AppRoutes.homescreen),
         title: "Browse Collection",
         borderRadius: 100,
       ),

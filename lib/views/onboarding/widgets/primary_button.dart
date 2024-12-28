@@ -8,18 +8,20 @@ class PrimaryButton extends StatelessWidget {
   final int borderRadius;
   final String title;
   final VoidCallback onTap;
+  final double? height;
   const PrimaryButton({
     super.key,
     required this.onTap,
     required this.title,
     required this.borderRadius,
+    this.height,
   });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-          fixedSize: Size(Get.width, 90.h),
+          fixedSize: Size(Get.width, height ?? 90.h),
           backgroundColor: AppColors.kBlackColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadius.r),
