@@ -17,8 +17,8 @@ class ProductTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 150.h,
-        width: 150.w,
+        // height: 150.h,
+        // width: 150.w,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.r),
           color: AppColors.kWhiteColor,
