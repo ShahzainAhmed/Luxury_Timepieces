@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:luxury_timepieces/resources/app_assets.dart';
 import 'package:luxury_timepieces/resources/app_colors.dart';
