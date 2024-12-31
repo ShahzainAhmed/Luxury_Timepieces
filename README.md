@@ -1,4 +1,4 @@
-## Luxury Timepieces - Flutter App
+## Luxury Timepieces App
 
 ### LinkedIn Post:
 https://www.linkedin.com/feed/update/urn:li:activity:7278840846559367169/
